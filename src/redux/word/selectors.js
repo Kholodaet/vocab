@@ -1,0 +1,10 @@
+export const selectCategories = (state) => state.word.categories;
+export const selectAllWords = (state) => state.word.words;
+export const selectTotalPages = (state) => state.word.totalPages;
+export const selectPage = (state) => state.word.page;
+export const selectPerPage = (state) => state.word.perPage;
+export const selectFilteredWords = (state) => state.word.filtered;
+export const selectOwnWords = (state) => state.word.own;
+export const selectStatistics = (state) => state.word.statistics;
+export const selectTasks = (state) => state.word.tasks;
+export const selectAnswers = (state) => state.word.answers;
