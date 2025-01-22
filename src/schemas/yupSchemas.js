@@ -9,7 +9,7 @@ export const registerSchema = Yup.object().shape({
   password: Yup.string()
     .matches(
       /^(?=.*[a-zA-Z]{6})(?=.*\d)[a-zA-Z\d]{7}$/,
-      "min 6, including one letter and one number"
+      "The password must consist of 6 English letters and 1 number"
     )
     .required("Password is required"),
 });
@@ -22,7 +22,7 @@ export const loginSchema = Yup.object().shape({
   password: Yup.string()
     .matches(
       /^(?=.*[a-zA-Z]{6})(?=.*\d)[a-zA-Z\d]{7}$/,
-      "min 6, including one letter and one number"
+      "The password must consist of 6 English letters and 1 number"
     )
     .required("Password is required"),
 });
