@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import sprite from "../../images/sprite.svg";
 import { BurgerBtn, Container, Wrapper } from "./Header.styled";
 import Menu from "./Menu/Menu";
@@ -21,6 +21,13 @@ const Header = () => {
   const handleCloseMenu = () => {
     setIsMenuOpen(false);
   };
+
+  // Закриття меню, якщо розмір екрану змінюється на десктопний
+  useEffect(() => {
+    if (isDesktop) {
+      handleCloseMenu(); // Закриваємо меню
+    }
+  }, [isDesktop]); // Виконуємо, якщо `isDesktop` змінюється
 
   return (
     <>

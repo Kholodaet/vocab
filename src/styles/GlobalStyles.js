@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-
 export const GlobalStyles = createGlobalStyle`
 
 h1,
@@ -17,6 +16,10 @@ body {
   padding: 0;
   font-family: sans-serif;
   font-style: normal;
+  background: ${({ theme }) => theme.colors.background}; /* Сірий фон */
+  min-height: 100vh; /* Забезпечує висоту на весь екран */
+  display: flex;
+  flex-direction: column;
 }
 
 p:last-child {
@@ -49,6 +52,7 @@ img {
 `;
 
 export const CommonContainer = styled.div`
+  flex: 1; /* Забезпечує розтягування контейнера на всю висоту */
   padding-left: 16px;
   padding-right: 16px;
 
