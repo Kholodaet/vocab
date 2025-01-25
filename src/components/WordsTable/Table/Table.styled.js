@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 0 auto; /* Центрування Wrapper */
+  margin: 0 auto;
   padding: 18px;
   background: #fff;
   box-sizing: border-box;
   border-radius: 15px;
-  width: 100%; /* Wrapper займатиме всю ширину контейнера */
-  max-width: 1240px; /* Максимальна ширина для великих екранів */
+  width: 100%;
+  max-width: 1240px;
 
   @media only screen and (min-width: 768px) {
     max-width: 704px;
@@ -19,8 +19,8 @@ export const Wrapper = styled.div`
 `;
 
 export const TableContainer = styled.div`
-  width: 100%; /* Контейнер для таблиці займає всю ширину Wrapper */
-  overflow: auto; /* Прокрутка, якщо таблиця ширша за контейнер */
+  width: 100%;
+  overflow: auto;
   border-radius: 8px;
 
   @media only screen and (min-width: 768px) {
@@ -29,8 +29,8 @@ export const TableContainer = styled.div`
 `;
 
 export const TableItem = styled.table`
-  width: 100%; /* Таблиця розтягується на всю ширину контейнера */
-  table-layout: fixed; /* Фіксована ширина колонок для уникнення зжимання */
+  width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   border-radius: 8px;
 
