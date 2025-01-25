@@ -8,6 +8,11 @@ export const Container = styled(CommonContainer)`
   @media only screen and (min-width: 768px) {
     padding-top: 24px;
     padding-bottom: 106px;
+    background: radial-gradient(
+      circle at right bottom,
+      #a5c0b8 0%,
+      #f8f8f8 20%
+    );
   }
 `;
 
@@ -15,6 +20,7 @@ export const Wrapper = styled.div`
   display: flex;
   gap: 80px;
   margin-top: 103px;
+  justify-content: center;
 `;
 
 export const Img = styled.img`

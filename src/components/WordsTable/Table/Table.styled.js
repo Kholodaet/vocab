@@ -1,25 +1,27 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin-bottom: 32px;
+  margin: 0 auto; /* Центрування Wrapper */
+  padding: 18px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 100%; /* Wrapper займатиме всю ширину контейнера */
+  max-width: 1240px; /* Максимальна ширина для великих екранів */
 
   @media only screen and (min-width: 768px) {
-    padding: 18px;
-    background: #fff;
-    width: 704px;
-    box-sizing: border-box;
-    border-radius: 15px;
+    max-width: 704px;
   }
 
   @media only screen and (min-width: 1440px) {
-    width: 1240px;
+    max-width: 1240px;
   }
 `;
 
 export const TableContainer = styled.div`
-  border-radius: 8px 8px 0 0;
-  border: none;
-  overflow: auto;
+  width: 100%; /* Контейнер для таблиці займає всю ширину Wrapper */
+  overflow: auto; /* Прокрутка, якщо таблиця ширша за контейнер */
+  border-radius: 8px;
 
   @media only screen and (min-width: 768px) {
     border-radius: 8px;
@@ -27,17 +29,19 @@ export const TableContainer = styled.div`
 `;
 
 export const TableItem = styled.table`
-  border-radius: 8px 8px 0px 0px;
+  width: 100%; /* Таблиця розтягується на всю ширину контейнера */
+  table-layout: fixed; /* Фіксована ширина колонок для уникнення зжимання */
   border-collapse: collapse;
-  width: 100%;
+  border-radius: 8px;
 
   & th,
-  td {
+  & td {
     padding: 16px 14px;
     border: 1px solid ${({ theme }) => theme.colors.tableBorder};
     color: ${({ theme }) => theme.colors.black};
     font-weight: 500;
-    word-wrap: break-word;
+    text-align: left; /* Текст вирівнюється зліва */
+    word-wrap: break-word; /* Перенос слів у комірках */
   }
 
   & th {
@@ -101,7 +105,7 @@ export const AddToDictionaryBtn = styled.button`
       color: ${({ theme }) => theme.colors.black};
       font-size: 14px;
       font-weight: 500;
-      text-wrap: nowrap;
+      white-space: nowrap; /* Уникнення переносу тексту */
 
       &:hover {
         color: ${({ theme }) => theme.colors.green};
