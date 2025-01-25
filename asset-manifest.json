@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vocab/static/css/main.9c33b6b4.css",
-    "main.js": "/vocab/static/js/main.4fb2fb11.js",
+    "main.js": "/vocab/static/js/main.f495b66b.js",
     "static/media/desk-illustration@2x.png": "/vocab/static/media/desk-illustration@2x.38ef90c96887d97cfb4a.png",
     "static/media/tab-menu-illustration@2x.png": "/vocab/static/media/tab-menu-illustration@2x.18d95d3ce200bb1060fc.png",
     "static/media/mob-menu-illustration@2x.png": "/vocab/static/media/mob-menu-illustration@2x.5cec6a70dae99fe86ef1.png",
@@ -21,10 +21,10 @@
     "static/media/sprite.svg": "/vocab/static/media/sprite.19bfe3a9cf9ff4110021217d9ca0ed6a.svg",
     "index.html": "/vocab/index.html",
     "main.9c33b6b4.css.map": "/vocab/static/css/main.9c33b6b4.css.map",
-    "main.4fb2fb11.js.map": "/vocab/static/js/main.4fb2fb11.js.map"
+    "main.f495b66b.js.map": "/vocab/static/js/main.f495b66b.js.map"
   },
   "entrypoints": [
     "static/css/main.9c33b6b4.css",
-    "static/js/main.4fb2fb11.js"
+    "static/js/main.f495b66b.js"
   ]
 }
