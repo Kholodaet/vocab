@@ -20,5 +20,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          branch: gh-pages # Вказуємо gh-pages, а не main
+          branch: gh-pages
           folder: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Використовуємо стандартний токен
