@@ -7,20 +7,18 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3 # Оновлена версія
+        uses: actions/checkout@v3
 
       - name: Install, lint, build 🔧
         run: |
           npm install
-          npm run lint:js # Якщо це потрібно
-          npm run build # Якщо ви використовуєте build для створення статичних файлів
+          npm run lint:js
+          npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          branch: main # Використовуємо основну гілку (main) для деплою
-          folder: build # Вказуємо директорію, яка містить ваш зібраний сайт
-          token: ${{ secrets.GITHUB_TOKEN }} # Замість токена, можете використовувати стандартний GitHub токен
+          branch: gh-pages # Вказуємо gh-pages, а не main
+          folder: build
